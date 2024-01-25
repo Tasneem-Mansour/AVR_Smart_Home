@@ -102,18 +102,18 @@ void EXT_INTERRUPT_VID_DISABLE(uint8 interrupt_number){
 	}
 
 
-//	void __vector_1 (void) __attribute__ ((signal,used, externally_visible)) ; \
-//	void __vector_1 (void){
-//		EXTI0_CALLBACK_PTR();
-//	}
-//
-//	void __vector_2 (void) __attribute__ ((signal,used, externally_visible)) ; \
-//	void __vector_2 (void){
-//		EXTI1_CALLBACK_PTR();
-//	}
-//
-//
-//	void __vector_3 (void) __attribute__ ((signal,used, externally_visible)) ; \
-//	void __vector_3 (void){
-//		EXTI2_CALLBACK_PTR();
-//	}
+	void __vector_1 (void) __attribute__ ((signal,used, externally_visible)) ; \
+	void __vector_1 (void){
+		EXTI0_CALLBACK_PTR();
+	}
+
+	void __vector_2 (void) __attribute__ ((signal,used, externally_visible)) ; \
+	void __vector_2 (void){
+		EXTI1_CALLBACK_PTR();
+	}
+
+
+	void __vector_3 (void) __attribute__ ((signal,used, externally_visible)) ; \
+	void __vector_3 (void){
+		EXTI2_CALLBACK_PTR();
+	}

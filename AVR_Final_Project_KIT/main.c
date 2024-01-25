@@ -99,8 +99,8 @@ int main(void){
 	LCD_voidWriteString_4bitMode("22B1", 4);
 	LCD_voidGotoxy_4bitMode(5,LineTwo);
 	LCD_voidWriteString_4bitMode("------", 6);
-
 	_delay_ms(100);
+
 	//Fire an interrupt if the renter pressed the arrival button
 	EXT_INTERRUPT_VID_ENABLE(EXT2);
 	EXT2_VID_SET_CALL_BACK(ArrivalButton);
@@ -139,6 +139,7 @@ int main(void){
 	}
 }
 void ArrivalButton(){
+	_delay_ms(1000);
 	uint8 u8ErrorDetected=0;
 	uint8 u8PasswordSize = sizeof(u8InputPassword)/sizeof(u8InputPassword[0]);
 
@@ -229,6 +230,7 @@ void ArrivalButton(){
 	//Enable timer0 to save power
 	TIMER0_voidInit();
 	TIMER0_voidEnable(TIMER0_PRESCALER_8);
+	_delay_ms(1000);
 
 }
 

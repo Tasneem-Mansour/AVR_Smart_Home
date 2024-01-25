@@ -184,7 +184,7 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x54b2
+.text           0x00000000     0x5892
  *(.vectors)
  .vectors       0x00000000       0x54 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -240,15 +240,12 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
  *(.init9)
  *(.text)
  .text          0x0000008e        0x4 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
-                0x0000008e                __vector_1
                 0x0000008e                __vector_12
                 0x0000008e                __bad_interrupt
-                0x0000008e                __vector_3
                 0x0000008e                __vector_17
                 0x0000008e                __vector_19
                 0x0000008e                __vector_5
                 0x0000008e                __vector_4
-                0x0000008e                __vector_2
                 0x0000008e                __vector_18
                 0x0000008e                __vector_20
  .text          0x00000092        0x0 ./UART/UART_program.o
@@ -519,119 +516,128 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
  .text.EXT2_VID_SET_CALL_BACK
                 0x000037be       0x24 ./INT/EXTI_program.o
                 0x000037be                EXT2_VID_SET_CALL_BACK
+ .text.__vector_1
+                0x000037e2       0x5a ./INT/EXTI_program.o
+                0x000037e2                __vector_1
+ .text.__vector_2
+                0x0000383c       0x5a ./INT/EXTI_program.o
+                0x0000383c                __vector_2
+ .text.__vector_3
+                0x00003896       0x5a ./INT/EXTI_program.o
+                0x00003896                __vector_3
  .text.Global_Interrupt_Enable
-                0x000037e2       0x1c ./INT/Global_Interrupt_program.o
-                0x000037e2                Global_Interrupt_Enable
+                0x000038f0       0x1c ./INT/Global_Interrupt_program.o
+                0x000038f0                Global_Interrupt_Enable
  .text.Global_Interrupt_Disable
-                0x000037fe       0x1c ./INT/Global_Interrupt_program.o
-                0x000037fe                Global_Interrupt_Disable
+                0x0000390c       0x1c ./INT/Global_Interrupt_program.o
+                0x0000390c                Global_Interrupt_Disable
  .text.EEPROM_voidRead
-                0x0000381a       0x44 ./EEPROM/EEPROM_program.o
-                0x0000381a                EEPROM_voidRead
+                0x00003928       0x44 ./EEPROM/EEPROM_program.o
+                0x00003928                EEPROM_voidRead
  .text.EEPROM_voidWrite
-                0x0000385e      0x128 ./EEPROM/EEPROM_program.o
-                0x0000385e                EEPROM_voidWrite
+                0x0000396c      0x128 ./EEPROM/EEPROM_program.o
+                0x0000396c                EEPROM_voidWrite
  .text.EEPROM_voidWritePage
-                0x00003986      0x150 ./EEPROM/EEPROM_program.o
-                0x00003986                EEPROM_voidWritePage
+                0x00003a94      0x150 ./EEPROM/EEPROM_program.o
+                0x00003a94                EEPROM_voidWritePage
  .text.TWI_voidMasterInit
-                0x00003ad6       0x56 ./EEPROM/TWI_program.o
-                0x00003ad6                TWI_voidMasterInit
+                0x00003be4       0x56 ./EEPROM/TWI_program.o
+                0x00003be4                TWI_voidMasterInit
  .text.TWI_voidSlaveInit
-                0x00003b2c       0x32 ./EEPROM/TWI_program.o
-                0x00003b2c                TWI_voidSlaveInit
+                0x00003c3a       0x32 ./EEPROM/TWI_program.o
+                0x00003c3a                TWI_voidSlaveInit
  .text.TWI_enStartCondition
-                0x00003b5e       0x62 ./EEPROM/TWI_program.o
-                0x00003b5e                TWI_enStartCondition
+                0x00003c6c       0x62 ./EEPROM/TWI_program.o
+                0x00003c6c                TWI_enStartCondition
  .text.TWI_enRepeatStart
-                0x00003bc0       0x62 ./EEPROM/TWI_program.o
-                0x00003bc0                TWI_enRepeatStart
+                0x00003cce       0x62 ./EEPROM/TWI_program.o
+                0x00003cce                TWI_enRepeatStart
  .text.TWI_enSetSlaveAddress_Write
-                0x00003c22       0x7c ./EEPROM/TWI_program.o
-                0x00003c22                TWI_enSetSlaveAddress_Write
+                0x00003d30       0x7c ./EEPROM/TWI_program.o
+                0x00003d30                TWI_enSetSlaveAddress_Write
  .text.TWI_enSetSlaveAddress_Read
-                0x00003c9e       0x70 ./EEPROM/TWI_program.o
-                0x00003c9e                TWI_enSetSlaveAddress_Read
+                0x00003dac       0x70 ./EEPROM/TWI_program.o
+                0x00003dac                TWI_enSetSlaveAddress_Read
  .text.TWI_enMasterWriteData
-                0x00003d0e       0x60 ./EEPROM/TWI_program.o
-                0x00003d0e                TWI_enMasterWriteData
+                0x00003e1c       0x60 ./EEPROM/TWI_program.o
+                0x00003e1c                TWI_enMasterWriteData
  .text.TWI_enMasterReadData
-                0x00003d6e       0x78 ./EEPROM/TWI_program.o
-                0x00003d6e                TWI_enMasterReadData
+                0x00003e7c       0x78 ./EEPROM/TWI_program.o
+                0x00003e7c                TWI_enMasterReadData
  .text.TWI_voidStopCondition
-                0x00003de6       0x38 ./EEPROM/TWI_program.o
-                0x00003de6                TWI_voidStopCondition
+                0x00003ef4       0x38 ./EEPROM/TWI_program.o
+                0x00003ef4                TWI_voidStopCondition
  .text.DIO_voidInit
-                0x00003e1e       0x2e ./DIO/DIO_program.o
-                0x00003e1e                DIO_voidInit
+                0x00003f2c       0x2e ./DIO/DIO_program.o
+                0x00003f2c                DIO_voidInit
  .text.DIO_voidWritePin
-                0x00003e4c      0x1e6 ./DIO/DIO_program.o
-                0x00003e4c                DIO_voidWritePin
+                0x00003f5a      0x1e6 ./DIO/DIO_program.o
+                0x00003f5a                DIO_voidWritePin
  .text.DIO_u8ReadPin
-                0x00004032       0xf2 ./DIO/DIO_program.o
-                0x00004032                DIO_u8ReadPin
+                0x00004140       0xf2 ./DIO/DIO_program.o
+                0x00004140                DIO_u8ReadPin
  .text.DIO_voidTogglePin
-                0x00004124       0xfc ./DIO/DIO_program.o
-                0x00004124                DIO_voidTogglePin
+                0x00004232       0xfc ./DIO/DIO_program.o
+                0x00004232                DIO_voidTogglePin
  .text.DIO_voidWritePort
-                0x00004220       0x84 ./DIO/DIO_program.o
-                0x00004220                DIO_voidWritePort
+                0x0000432e       0x84 ./DIO/DIO_program.o
+                0x0000432e                DIO_voidWritePort
  .text.DIO_voidPullUpState
-                0x000042a4      0x104 ./DIO/DIO_program.o
-                0x000042a4                DIO_voidPullUpState
+                0x000043b2      0x104 ./DIO/DIO_program.o
+                0x000043b2                DIO_voidPullUpState
  .text.DCM_voidRotateCW
-                0x000043a8       0x22 ./DC_Motor/DC_Motor_program.o
-                0x000043a8                DCM_voidRotateCW
+                0x000044b6       0x22 ./DC_Motor/DC_Motor_program.o
+                0x000044b6                DCM_voidRotateCW
  .text.DCM_voidRotateCCW
-                0x000043ca       0x22 ./DC_Motor/DC_Motor_program.o
-                0x000043ca                DCM_voidRotateCCW
+                0x000044d8       0x22 ./DC_Motor/DC_Motor_program.o
+                0x000044d8                DCM_voidRotateCCW
  .text.DCM_voidStop
-                0x000043ec       0x22 ./DC_Motor/DC_Motor_program.o
-                0x000043ec                DCM_voidStop
+                0x000044fa       0x22 ./DC_Motor/DC_Motor_program.o
+                0x000044fa                DCM_voidStop
  .text.ADC_Init
-                0x0000440e       0x70 ./ADC/ADC_program.o
-                0x0000440e                ADC_Init
+                0x0000451c       0x70 ./ADC/ADC_program.o
+                0x0000451c                ADC_Init
  .text.ADC_Read_SYNCH
-                0x0000447e       0x62 ./ADC/ADC_program.o
-                0x0000447e                ADC_Read_SYNCH
+                0x0000458c       0x62 ./ADC/ADC_program.o
+                0x0000458c                ADC_Read_SYNCH
  .text.ADC_Start_ASYNC
-                0x000044e0       0x50 ./ADC/ADC_program.o
-                0x000044e0                ADC_Start_ASYNC
+                0x000045ee       0x50 ./ADC/ADC_program.o
+                0x000045ee                ADC_Start_ASYNC
  .text.ADC_Read_ASYNC
-                0x00004530       0x16 ./ADC/ADC_program.o
-                0x00004530                ADC_Read_ASYNC
+                0x0000463e       0x16 ./ADC/ADC_program.o
+                0x0000463e                ADC_Read_ASYNC
  .text.ADC_void_SET_CALL_BACK
-                0x00004546       0x24 ./ADC/ADC_program.o
-                0x00004546                ADC_void_SET_CALL_BACK
+                0x00004654       0x24 ./ADC/ADC_program.o
+                0x00004654                ADC_void_SET_CALL_BACK
  .text.__vector_16
-                0x0000456a       0x5a ./ADC/ADC_program.o
-                0x0000456a                __vector_16
- .text.main     0x000045c4      0x3b6 ./main.o
-                0x000045c4                main
+                0x00004678       0x5a ./ADC/ADC_program.o
+                0x00004678                __vector_16
+ .text.main     0x000046d2      0x3ba ./main.o
+                0x000046d2                main
  .text.ArrivalButton
-                0x0000497a      0x8d4 ./main.o
-                0x0000497a                ArrivalButton
+                0x00004a8c      0xba2 ./main.o
+                0x00004a8c                ArrivalButton
  .text.EntranceButton
-                0x0000524e      0x148 ./main.o
-                0x0000524e                EntranceButton
- .text.libgcc   0x00005396       0x3e d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x00005396                __mulsi3
- .text.libgcc   0x000053d4       0x28 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x000053d4                __udivmodhi4
- .text.libgcc   0x000053fc       0x44 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x000053fc                __udivmodsi4
- .text.libgcc   0x00005440        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00005440        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00005440        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00005440       0x38 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00005440                __prologue_saves__
- .text.libgcc   0x00005478       0x36 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00005478                __epilogue_restores__
-                0x000054ae                . = ALIGN (0x2)
+                0x0000562e      0x148 ./main.o
+                0x0000562e                EntranceButton
+ .text.libgcc   0x00005776       0x3e d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00005776                __mulsi3
+ .text.libgcc   0x000057b4       0x28 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000057b4                __udivmodhi4
+ .text.libgcc   0x000057dc       0x44 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000057dc                __udivmodsi4
+ .text.libgcc   0x00005820        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00005820        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00005820        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00005820       0x38 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00005820                __prologue_saves__
+ .text.libgcc   0x00005858       0x36 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00005858                __epilogue_restores__
+                0x0000588e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000054ae        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000054ae                exit
-                0x000054ae                _exit
+ .fini9         0x0000588e        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000588e                exit
+                0x0000588e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -650,11 +656,11 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000054ae        0x4 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000588e        0x4 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000054b2                _etext = .
+                0x00005892                _etext = .
 
-.data           0x00800060       0x80 load address 0x000054b2
+.data           0x00800060       0x80 load address 0x00005892
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -786,8 +792,8 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
                 0x00800118                u8SecondVar
                 0x00800119                u32Light_ISR
                 0x0080011d                PROVIDE (__bss_end, .)
-                0x000054b2                __data_load_start = LOADADDR (.data)
-                0x00005532                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00005892                __data_load_start = LOADADDR (.data)
+                0x00005912                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080011d        0x0
                 0x0080011d                PROVIDE (__noinit_start, .)
@@ -812,7 +818,7 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x6030
+.stab           0x00000000     0x6240
  *(.stab)
  .stab          0x00000000      0x69c ./UART/UART_program.o
  .stab          0x0000069c      0x8c4 ./TIMER1_Servo/TIMER1_program.o
@@ -827,26 +833,26 @@ LOAD d:/university/external courses/imt-wazeefa tech/tools/imt_sdk_win_64/winavr
                                0x1a94 (size before relaxing)
  .stab          0x00003288      0x450 ./KeyPad/KPD_program.o
                                 0x5e8 (size before relaxing)
- .stab          0x000036d8      0x378 ./INT/EXTI_program.o
-                                0x384 (size before relaxing)
- .stab          0x00003a50      0x144 ./INT/Global_Interrupt_program.o
+ .stab          0x000036d8      0x408 ./INT/EXTI_program.o
+                                0x414 (size before relaxing)
+ .stab          0x00003ae0      0x144 ./INT/Global_Interrupt_program.o
                                 0x1ec (size before relaxing)
- .stab          0x00003b94      0x504 ./EEPROM/EEPROM_program.o
+ .stab          0x00003c24      0x504 ./EEPROM/EEPROM_program.o
                                 0x69c (size before relaxing)
- .stab          0x00004098      0x63c ./EEPROM/TWI_program.o
+ .stab          0x00004128      0x63c ./EEPROM/TWI_program.o
                                 0x708 (size before relaxing)
- .stab          0x000046d4      0x540 ./DIO/DIO_program.o
+ .stab          0x00004764      0x540 ./DIO/DIO_program.o
                                 0x54c (size before relaxing)
- .stab          0x00004c14      0x234 ./DC_Motor/DC_Motor_program.o
+ .stab          0x00004ca4      0x234 ./DC_Motor/DC_Motor_program.o
                                 0x240 (size before relaxing)
- .stab          0x00004e48      0x360 ./ADC/ADC_program.o
+ .stab          0x00004ed8      0x360 ./ADC/ADC_program.o
                                 0x36c (size before relaxing)
- .stab          0x000051a8      0xe88 ./main.o
-                               0x1044 (size before relaxing)
+ .stab          0x00005238     0x1008 ./main.o
+                               0x11c4 (size before relaxing)
 
-.stabstr        0x00000000     0x1e22
+.stabstr        0x00000000     0x1e5b
  *(.stabstr)
- .stabstr       0x00000000     0x1e22 ./UART/UART_program.o
+ .stabstr       0x00000000     0x1e5b ./UART/UART_program.o
 
 .stab.excl
  *(.stab.excl)

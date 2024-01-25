@@ -25,7 +25,7 @@ IOC
 FALLING_EDGE
 RISING_EDGE
 */
-#define EXT1_MODE FALLING_EDGE				//you can select the mode
+#define EXT1_MODE RISING_EDGE				//you can select the mode
 /*
 options:
 LOW_LEVEL
